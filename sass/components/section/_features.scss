@@ -1,0 +1,49 @@
+.section-nopadding{
+    padding-top: 94px;
+}
+
+.features-list {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;  
+  
+  }
+  
+  .features-list .item:not(:last-child) {
+    margin-right: var(--primary-margine-right);
+  }
+  
+  
+  .features-box{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--bakground-secondary-color);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px ;
+    border-radius: 4px;
+    
+  }
+  .features-icons:not(:last-child){
+    margin-right: 30px;
+  }
+  
+  .features-title {
+  margin-bottom: 10px;
+  
+    display: block;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+  
+  }
+  .features-text {
+    color: var(--text-tell-color);
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    vertical-align: top;
+    width: 270px;
+  
+  }

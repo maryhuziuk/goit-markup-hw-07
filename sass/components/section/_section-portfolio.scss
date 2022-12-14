@@ -1,0 +1,33 @@
+
+
+  .box-overlay-text{
+    position: relative;
+  }
+  .overlay-img-text{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--background-maintittle-color);
+    background: rgba(47, 48, 58, 0.8);
+  }
+  
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-list .item:not(:last-child)  {
+    margin-right: var(--primary-margine-right);
+    margin-left: auto;
+  }
+  
+  
