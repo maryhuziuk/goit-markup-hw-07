@@ -1,13 +1,7 @@
 .page-header{
     border-bottom: 1px solid #ECECEC;
-  }
-  
-.header-container {
-    display: flex;
-    align-items: center;
-  }
-  .header-nav {
-    display: flex;
-    
-  }
+  &-container {
+    @extend %flex-align;
+    }
+}
   

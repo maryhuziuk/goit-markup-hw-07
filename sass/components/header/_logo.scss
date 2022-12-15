@@ -7,11 +7,11 @@
     font-family: Raleway, sans-serif;
     text-decoration: none;
     font-size: 26px;
-    line-height: 1.19; 
+    
+    &__web {
+      color: var(--accent-color);
+      font-family: Raleway, sans-serif;
+    }
    
   }
   
-  .logo-web {
-    color: var(--accent-color);
-    font-family: Raleway, sans-serif;
-  }

@@ -18,10 +18,7 @@
     margin-right: auto;
     margin-left: auto ;
     
-  
-  }
-  
-  .hero-tittle {
+  &__tittle {
     margin-bottom: 30px;
   
     color: var(--background-maintittle-color);
@@ -33,3 +30,6 @@
     letter-spacing: 0.06em;
   
   }
+  
+  }
+  

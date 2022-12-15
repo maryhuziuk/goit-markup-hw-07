@@ -3,6 +3,7 @@
 @import './utils/common';
 @import './utils/title';
 @import './utils/container';
+@import './utils/plaseholder';
 
 @import './components/header/page-header';
 @import './components/header/logo';
@@ -25,6 +26,9 @@
 @import './components/modal-window/modal';
 @import './components/modal-window/backdrop';
 @import './components/modal-window/modal-button';
+
+@import './components/portfolio/button-portfolio';
+@import './components/portfolio/flex-element';
 
 
 

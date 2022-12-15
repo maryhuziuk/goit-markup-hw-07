@@ -18,10 +18,12 @@
     text-align: center;
     border: none;
     
+    &:hover,
+    &:focus {
+      color: var(--background-maintittle-color);
+      background-color:#188CE8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    
   }
-  .btn-hero:hover,
-  .btn-hero:focus {
-    color: var(--background-maintittle-color);
-    background-color:#188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+ 

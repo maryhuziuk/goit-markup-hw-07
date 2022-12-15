@@ -1,12 +1,11 @@
 .team-bagr{
     background-color: var(--bakground-secondary-color);
   }
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .team-list .item:not(:last-child) {
-    margin-right: var(--primary-margine-right);
+  .team{
+    @extend %flex-wrapp;
+    &__item:not(:last-child) {
+      margin-right: var(--primary-margine-right);
+    }
   }
   .name {
     margin-bottom: 10px;
@@ -17,56 +16,66 @@
     text-align: center;
     font-weight: 500;
   }
-  .person-info{
+  .about{
     padding-top:30px;
     padding-bottom:30px ;
     background:var(--background-maintittle-color) ;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    &__name {
+      margin-bottom: 10px;
+    
+      font-size: 16px;
+      line-height: 1.18;
+      vertical-align: top;
+      text-align: center;
+      font-weight: 500;
+    }
+    &__text {
+      margin-bottom: 16px;
+      color: var(--text-tell-color);
+      font-size: 16px;
+      line-height: 1.18;
+      vertical-align: top;
+      text-align: center;
+    }
     
   }
   
-  .person-text {
-    margin-bottom: 16px;
-    color: var(--text-tell-color);
-    font-size: 16px;
-    line-height: 1.18;
-    vertical-align: top;
-    text-align: center;
-  }
-  
-  
-  .person-list{
-    display: flex;
+  .social {
+   @extend %flex-align;
     justify-content: center;
-    align-items: center;
+    &__items{
+      width: 44px;
+      height: 44px;
+  
+    }
+    &__items:not(:last-child) {
+      margin-right: 10px;
+    }
+    &__icons{
+      fill: currentColor;
+    }
   }
-  .person-soc-items{
-    width: 44px;
-    height: 44px;
-
-  }
-  .person-soc-link{
+  
+  .social__link{
     width: 100%;
     height: 100%;
-    display: flex;
+    @extend %flex-align;
     justify-content: center;
-    align-items: center;
     border-radius: 50%;
     color: #AFB1B8;
     transition: background-color 250ms var(--timing-functian), color 250ms var(--timing-functian);
-  }
-  .person-soc-link:hover,
-  .person-soc-link:focus{
+
+    &:hover,
+    &:focus{
     background-color:var(--accent-color);
     color: var(--background-maintittle-color);
   }
+  }
   
-  .person-soc-icons{
-    fill: currentColor;
-  }
-  .person-soc-items:not(:last-child) {
-    margin-right: 10px;
-  }
+  
+ 
+ 
  
   
